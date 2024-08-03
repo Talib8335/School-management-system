@@ -1,0 +1,243 @@
+@charset "utf-8";
+	.my-bg{
+		background-color:#6D0EB1;
+	}
+
+	.bg-white{
+		background-color:white;
+	}
+
+	.text-white{
+		color:white;
+	}
+	.navbar a{
+		color:white;
+	}
+
+	.add-header,.first-add-header,.second-add-header,.third-add-header{
+		font-family: "Righteous",sans-serif;
+		font-size: 150px;
+		letter-spacing: 10px
+	}
+
+	.add-desc{
+		font-size:30px;
+		font-family:"PT Sans Caption",sans-serif;
+	}
+
+	.carousel-indicators{
+		bottom:-30px;
+	}
+
+	.carousel-indicators li.active{
+		background-color:yellow;
+	}
+
+	#search-box{
+		width:438px;
+		top:10px;
+		right:25px;
+	}
+
+	.our-story h2{
+		font-family:"PT Sans Caption",sans-serif;
+		color:black;
+	}
+
+	.our-story h5{
+		font-family:"verdana",sans-serif;
+		font-size:18px;
+		text-align:justify;
+		color:black;
+	}
+
+	.our-story p{
+		text-align: justify;
+		color:#323232;
+		letter-spacing:1px;
+		line-height:25px;
+	}
+
+	.our-story .nav-link{
+		border:none;
+	}
+
+	.our-story .nav-link.active{
+		color:red;
+		background-image:url(../images/hover.png);
+		background-repeat:no-repeat;
+		background-position: bottom;
+		padding-bottom: 15px;
+		background-size:0 0;
+		-webkit-animation:hover 1s;
+		-o-animation:hover 1s;
+		-moz-animation:hover 1s;
+		animation:hover 1s;
+		animation-fill-mode:forwards;
+	}
+
+	@-webkit-keyframes hover{
+		0%{
+			background-size:0 0;
+		}
+
+		100%{
+			background-size:70% 15px;
+		}
+	}
+
+
+
+@-o-keyframes hover{
+		0%{
+			background-size:0 0;
+		}
+
+		100%{
+			background-size:70% 15px;
+		}
+	}
+
+
+	@-moz-keyframes hover{
+		0%{
+			background-size:0 0;
+		}
+
+		100%{
+			background-size:70% 15px;
+		}
+	}
+	
+	@keyframes hover{
+		0%{
+			background-size:0 0;
+		}
+
+		100%{
+			background-size:70% 15px;
+		}
+	}
+
+
+
+.study-us .card{
+	width:250px;
+	height:300px;
+	overflow:hidden;
+	border:none;
+}
+
+.study-us img,.study-us .btn-box{
+	position: absolute;
+}
+
+
+.study-us .btn-box{
+	width:100%;
+	height:100%;
+	background-color:rgba(0,0,0,0.8);
+	display: none
+}
+
+.study-us .btn-box div{
+	position: absolute;
+	top:50%;
+	left:50%;
+	transform: translate(-50%,-50%);
+	width:80%;
+	text-align:center;
+	color:white;
+}
+
+
+.study-us .card:hover img{
+	transform: scale(1.2);
+	transition: 1s
+}
+
+.study-us .card:hover .btn-box{
+	display: block
+}
+
+
+
+#project{
+	background-image:url(../images/project-bg.jpg);
+	background-size:50%;
+	background-repeat:repeat-y;
+	background-position: right top;
+}
+
+@media(max-width:768px)
+{
+	#project{
+		background-position: bottom;
+		background-repeat:repeat-y;
+		background-size:100%;
+	}
+
+	.study-us .card{
+	width:80%;
+	margin:0 auto;
+	
+}
+
+	#founder-card{
+		width:250px;
+	}
+
+	#founder-card img{
+		width:100%;
+	}
+
+
+}
+
+
+
+
+
+/*
+.study-us .card img{
+	width:100%;
+	height:100%;
+	position: absolute;
+}
+
+.study-us .card .btn-box{
+	width:100%;
+	height:100%;
+	background-color:rgba(0,0,0,0.8);
+	position: absolute;
+	z-index: 1;
+	display: none
+}
+
+
+.study-us .card .btn-box div{
+	position: absolute;
+	top:50%;
+	left:50%;
+	transform: translate(-50%,-50%);
+}
+
+
+
+.study-us .card:hover img{
+	transform : scale(1.2);
+	transition: transform 1s
+}
+
+.study-us .card:hover .btn-box{
+	display:block;
+}
+
+*/
+
+heading
+30-40
+
+
+description
+15-25px

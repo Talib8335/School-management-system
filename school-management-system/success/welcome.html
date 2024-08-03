@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>home</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+ <link rel="stylesheet" href="../css/bootstrap.css">
+  <link rel="stylesheet" href="../css/animate.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="style/welcome.css">
+  <script src="../js/jquery-1.9.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="../js/bootstrap.js"></script>
+  <script src="js/welcome.js"></script>
+</head>
+<body>
+<script>
+if(sessionStorage.getItem("login") == null)
+{
+	window.location = "https://google.com";
+}
+
+</script>
+
+	<div class="dark container-fluid">
+
+		<div class="row">
+			<div class="col-md-3 py-4 bg-white">
+				<center>
+				<div style="position:relative;width:110px;height:100px;border:1px solid #ccc;box-shadow:0px 0px 2px #ddd">
+					<div style="position:absolute;top:0;left:0;width:110px;height:100px;" class="show-pic">
+
+					</div>
+
+					<input type="file" accept="images/*" class="school-input" style="position:absolute;top:0;left:0;border:1px solid red;width:110px;height:100px;opacity:0">
+
+				</div>
+
+
+				<h4 class="mt-2 school-name"></h4>
+			<span class="tag-line"></span>
+			<button class="btn btn-info mt-2">SCHOOL MANAGEMENT SYSTEM V-1.0</button>
+		</center>
+		<h5 class="mt-5">Director signature</h5>
+		<div class="custom-file d-none d-sign-input">
+			<input type="file" accept="image/*" id="director" class="custom-file-input">
+			<label class="custom-file-label" for="director">Upload</label>
+		</div>
+		<ul class="list-group list-group-horizontal d-none d-sign-con">
+			<li class="list-group-item d-sign">
+
+			</li>
+
+			<li class="list-group-item bg-danger text-white">
+				<i class="fa fa-trash d-sign-icon" style="font-size:40px"></i>
+			</li>
+		</ul>
+
+		<h5 class="mt-5">Principal signature</h5>
+		<div class="custom-file d-none p-sign-input">
+			<input type="file" accept="image/*" id="principal" class="custom-file-input">
+			<label class="custom-file-label" for="principal">Upload</label>
+		</div>
+
+		<ul class="list-group list-group-horizontal d-none p-sign-con">
+			<li class="list-group-item p-sign">
+
+			</li>
+
+			<li class="list-group-item bg-danger text-white">
+				<i class="fa fa-trash p-sign-icon" style="font-size:40px"></i>
+			</li>
+		</ul>
+
+
+		<h5 class="mt-5">Find students by class</h5>
+			<select class="find-student form-control mb-1 ">
+				<option>Choose class</option>
+			</select>
+
+			
+			</div>
+
+			<div class="col-md-9 py-4">
+				<div class="row">
+					<div class="col-md-6">
+						<div class="bg-white set-fee mx-auto position-relative px-4 pt-2 pb-4 mb-4" style="width:95%">
+						<img src="../images/check_fee.png" alt="fee menu" width="150" style="position: absolute;top:0;right: 0" id="fee-menu">
+						<h5 class="mb-4 text-center">SET FEE FOR CLASSES</h5>
+						<input type="text" name="class-name" class="form-control class-name mb-4" placeholder="Enter class name ex : 7">
+						<div class="add-field-area">
+						<div class="input-group mb-4">
+							<input type="text" name="course-name" class="course-name form-control" placeholder="Hostel fee">
+							<input type="text" name="course-fee" class="course-fee form-control" placeholder="500">
+							<div class="input-group-append">
+								<span class="input-group-text bg-warning">Monthly</span>
+							</div>
+
+						</div>
+						</div>
+						<center>
+						<div class="btn-group">
+							<button class="btn btn-primary text-light add-field-btn"><i class="fa fa-plus"></i> Add field</button>
+							<button class="btn btn-danger text-light set-fee-btn">Set fee now</button>
+
+						</div>
+						</center>
+					</div>
+
+					<div class="bg-white set-fee mx-auto px-4 pt-2 pb-4 mb-4" style="width:95%">
+						<h5 class="mb-4 text-center">GET INVOICE</h5>
+						<input type="number" class="form-control mb-4 admission-no" placeholder="Enter admission no">
+						<div class="input-group mb-4">
+							<div class="input-group-prepend">
+								<span class="bg-warning input-group-text">Invoice date</span>
+							</div>
+							<input type="date" class="form-control invoice-date">
+
+						</div>
+						<div align="right">
+						<button class="btn btn-danger  invoice-btn">Get invoice now</button>
+					</div>
+					</div>
+
+					<div class="bg-white set-fee mx-auto px-4 pt-2 pb-4" style="width:95%">
+						<h5 class="mb-4 text-center">FIND STUDENTS</h5>
+						<input type="number" class="form-control mb-4 find-admission-no" placeholder="Enter admission no">
+
+						<div align="right">
+						<button class="btn btn-danger find-btn">find now</button>
+					</div>
+					</div>
+					</div>
+					<div class="col-md-6">
+						<div class="bg-white mx-auto position-relative px-4 pt-2 pb-4" style="width:95%">
+							<img src="../images/take_adm.png" width="150" style="position: absolute;top:0;left:0">
+							<button class="btn btn-dark py-0 a-no position-absolute" style="right:5px"></button>
+							<h5 class="mb-4 text-center">TAKE ADMISSION</h5>
+							<div class="media mb-4">
+								<div class="s-pic border position-relative" style="width:130px;height:100px">
+									<img src="../images/upload_pic.png" class="show-pic" width="100%">
+									<input type="file" accept="image/*" class="upload-pic" style="position: absolute;border:1px solid red;top:0;left:0;width:100%;height:100%;opacity: 0">
+								</div>
+
+								<div class="media-content w-100 pl-4">
+									<input type="text" name="s-name" placeholder="Student`s name" class="form-control s-name mb-4">
+									<input type="text" name="f-name" placeholder="Father`s name" class="form-control f-name">
+								</div>
+
+							</div>
+							<input type="text" name="m-name" class="form-control m-name mb-4" placeholder="Mother`s name">
+
+							<div class="input-group mb-4">
+								<div class="input-group-prepend">
+									<span class="input-group-text">DOB</span>
+								</div>
+								<input type="date" name="dob" class="form-control dob">
+								<select class="custom-control gender border" style="margin-left:1px">
+									<option>Male</option>
+									<option>Female</option>
+								</select>
+								<div class="input-group-append">
+									<span class="input-group-text">GENDER</span>
+								</div>
+
+							</div>
+
+							<div class="input-group mb-4">
+								<div class="input-group-prepend">
+									<span class="input-group-text">MOBILE NO</span>
+								</div>
+								<input type="number" name="mobile-one" class="form-control mobile-one">
+								<input type="number" name="mobile-two" class="form-control mobile-two">
+
+
+							</div>
+
+							<select class="form-control class mb-4">
+								<option>Choose class</option>
+							</select>
+							<div class="input-group mb-4">
+								<div class="input-group-prepend">
+									<span class="input-group-text">ADMITED IN</span>
+								</div>
+								<select class="form-control admit-in">
+									<option>School</option>
+									<option>Hostel</option>
+								</select>
+							</div>
+
+							<div class="input-group mb-4">
+								<div class="input-group-prepend">
+									<span class="input-group-text">ADDRESS</span>
+								</div>
+								<textarea class="form-control address">
+
+								</textarea>
+							</div>
+							<div class="admit-notice">
+
+							</div>
+							<div align="right">
+							<button class="btn btn-danger admit-btn">Admit now</button>
+						</div>
+						</div>
+
+						<div class="mx-auto not-found px-4 pt-2 pb-4" style="width:95%">
+
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</div>
+	<!-- start fee modal-->
+	<div class="modal animated slideInDown" id="fee-modal">
+		<div class="modal-dialog modal-lg">
+			<div class="modal-content">
+				<div class="modal-header bg-warning">
+					<h4 class="mx-auto">FEE STRUCTURE</h4>
+				</div>
+				<div class="modal-body" id="show-fee">
+
+				</div>
+				<div class="modal-footer bg-warning">
+					<button class="btn bg-light mx-auto">Print</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- edn fee moda-->
+
+
+</body>
+</html>

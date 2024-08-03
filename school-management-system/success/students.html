@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>home</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+ <link rel="stylesheet" href="../css/bootstrap.css">
+  <link rel="stylesheet" href="../css/animate.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="style/admission_slip.css">
+  <script src="../js/jquery-1.9.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="../js/bootstrap.js"></script>
+  <script src="js/students.js"></script>
+<style>
+	.border{
+		border-color:black !important;
+	}
+
+
+</style>
+</head>
+<body class="py-5">
+<script>
+if(sessionStorage.getItem("login") == null)
+{
+	window.location = "https://google.com";
+}
+
+</script>
+	
+	<div class="container-fluid">
+		<table class="table table-bordered student-table text-center">
+			<tr>
+				
+				<th>PIC</th>
+				<th>STUDENT`S NAME</th>	
+				<th>FATHER`S NAME</th>
+				<th>MOTHER`S NAME</th>
+				<th>DOB</th>
+				<th>DOA</th>
+				<th>MOBILE_ONE</th>	
+				<th>MOBILE_TWO</th>
+				<th>ADDRESS</th>
+			</tr>
+		</table>
+		<div class="student-notice">
+			
+		</div>
+	</div>
+</body>
+</html>

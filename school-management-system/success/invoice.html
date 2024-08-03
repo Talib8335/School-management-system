@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>home</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+ <link rel="stylesheet" href="../css/bootstrap.css">
+  <link rel="stylesheet" href="../css/animate.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="style/admission_slip.css">
+  <script src="../js/jquery-1.9.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="../js/bootstrap.js"></script>
+  <script src="js/invoice.js"></script>
+<style>
+	.border{
+		border-color:black !important;
+	}
+</style>
+</head>
+<body class="py-5">
+<script>
+if(sessionStorage.getItem("login") == null)
+{
+	window.location = "https://google.com";
+}
+
+</script>
+	
+	<div class="w-50 mx-auto"> 
+		<div class="row">
+			<div class="col-md-2 border d-flex logo" style="height:100px">
+				
+			</div>
+			<div class="col-md-10 border text-center">
+				<h2 class="school-name mt-3" style="text-transform: uppercase;"></h2>
+				<span class="tagline"></span>
+			</div>
+		</div>
+		
+		<div class="row">
+			<div class="col-md-3 border py-1 font-weight-bold">
+				STUDENT`S NAME
+			</div>
+			<div class="col-md-6 border py-1 s-name">
+				
+			</div>
+			<div class="col-md-2 border py-1 text-center font-weight-bold">INVOICE NO</div>
+			<div class="col-md-1 border py-1 text-center invoice-no"></div>
+			
+		</div>
+
+		<div class="row">
+			<div class="col-md-3 border py-1 font-weight-bold">
+				FATHER`S NAME
+			</div>
+			<div class="col-md-5 border py-1 f-name">
+				
+			</div>
+			<div class="col-md-2 border py-1 text-center font-weight-bold">DATE</div>
+			<div class="col-md-2 border py-1 text-center invoice-date"></div>
+			
+		</div>
+
+		<div class="row">
+			<div class="col-md-2 border py-1 font-weight-bold">
+				CLASS
+			</div>
+			<div class="col-md-10 border py-1 class">
+				
+			</div>
+		</div>
+
+		
+
+		<div class="row">
+			<div class="col-md-7 border py-1 font-weight-bold text-center">
+				
+			</div>
+			<div class="col-md-3 border py-1 description font-weight-bold text-center">
+				
+			</div>
+			<div class="col-md-2 fee border py-1 text-center font-weight-bold">
+				
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col-md-7 border py-1 font-weight-bold text-center">
+				
+			</div>
+
+			<div class="col-md-3 border py-1 font-weight-bold text-center">
+				TOTAL
+			</div>
+			<div class="col-md-2 amount border py-1 font-weight-bold text-center">
+				
+			</div>
+
+		</div>
+	
+
+<div class="row">
+			<div class="col-md-6 border py-1 font-weight-bold text-center">
+				<span class="p-sign"></span>
+				<span class="p-text"></span>
+			</div>
+
+			<div class="col-md-6 d-sign border py-1 font-weight-bold text-center">
+				<span class="d-sign"></span>
+				<span class="d-text"></span>
+			</div>
+
+		</div>
+
+		<div class="row">
+			<div class="col-md-12 border py-2 font-weight-bold text-center">
+				VENUE : JP NAGAR, BENGALURU, KARNATKA 543210
+			</div>
+
+		</div>
+		</div>
+</body>
+</html>

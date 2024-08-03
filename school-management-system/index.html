@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>home</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="css/animate.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  <script src="js/jquery-1.9.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="js/bootstrap.js"></script>
+  <script src="js/main.js"></script>
+</head>
+<body>
+
+ <div class="dark d-flex align-items-center">
+
+    <div class="container w-75 h-75">
+      
+      <div class="row">
+        <div class="col-md-3">
+          <ul class="list-group">
+            <li class="list-group-item bg-warning font-weight-bold">
+              SCHOOL MANAGEMENT 1.0
+            </li>
+
+            <li class="list-group-item px-0 pb-0">
+              <img src="images/pic.jpg" alt="pic" width="100%">
+            </li>
+
+            <li class="list-group-item bg-warning font-weight-bold text-center">
+              <a href="https://wapinstitute.com" class="list-group-link text-dark">CONTACT US</a></li>
+            </li>
+
+          </ul>
+        </div>
+        <div class="col-md-9">
+          <ul class="nav nav-tabs">
+            <li class="nav-item">
+              <a href="#register" class="nav-link active" data-toggle="tab">Register</a>
+            </li>
+
+            <li class="nav-item">
+              <a href="#login" class="nav-link" data-toggle="tab">Login</a>
+            </li>
+
+          </ul>
+
+          <div class="tab-content py-4" style="overflow-x: hidden">
+            <div id="register" class="tab-pane active animated slideInLeft faster">
+              <form id="register-form" method="post">
+                <div class="input-group mb-4">
+                  <div class="input-group-prepend bg-primary">
+                    <span class="input-group-text bg-primary border-0 font-weight-bold text-light">Enter school name here</span>
+                  </div>
+                  <input type="text" name="school-name" id="school-name" class="form-control border border-left-0" required="required">
+                </div>
+
+                <div class="input-group mb-4">
+                  <div class="input-group-prepend bg-primary">
+                    <span class="input-group-text bg-primary border-0 font-weight-bold text-light">Enter tag line here</span>
+                  </div>
+                  <input type="text" name="tag-line" id="tag-line" class="form-control border border-left-0">
+                </div>
+
+
+                <div class="input-group mb-4">
+                  <div class="input-group-prepend bg-primary">
+                    <span class="input-group-text bg-primary border-0 font-weight-bold text-light">Enter email id here</span>
+                  </div>
+                  <input type="email" name="email" id="email" class="form-control border border-left-0">
+                </div>
+
+
+                <div class="input-group mb-4">
+                  <div class="input-group-prepend bg-primary">
+                    <span class="input-group-text bg-primary border-0 font-weight-bold text-light">Enter password here</span>
+                  </div>
+                  <input type="password" name="password" id="password" class="form-control border border-left-0">
+                </div>
+
+                <div class="input-group mb-4">
+                  <div class="input-group-prepend bg-primary">
+                    <span class="input-group-text bg-primary border-0 font-weight-bold text-light">Enter website name here</span>
+                  </div>
+                  <input type="website" name="website" id="website" class="form-control border border-left-0">
+                </div>
+
+                <div class="input-group mb-4">
+                  <div class="input-group-prepend bg-primary">
+                    <span class="input-group-text bg-primary border-0 font-weight-bold text-light">Enter mobile no here</span>
+                  </div>
+                  <input type="number" name="mobile" id="mobile" class="form-control border border-left-0" required="required">
+                </div>
+
+                <div class="input-group mb-4">
+                  <div class="input-group-prepend bg-primary">
+                    <span class="input-group-text bg-primary border-0 font-weight-bold text-light">Enter phone no here</span>
+                  </div>
+                  <input type="number" name="phone" id="phone" class="form-control border border-left-0" required="required">
+                </div>
+
+                <div class="input-group mb-4">
+                  <div class="input-group-prepend bg-primary">
+                    <span class="input-group-text bg-primary border-0 font-weight-bold text-light">Enter address here</span>
+                  </div>
+                  <textarea class="form-control" name="address" id="address"></textarea>
+                </div>
+
+                <div class="alert float-left w-75 mt-1 d-none" id="message">
+                  <i class="fa fa-close close" style="font-size:20px" data-dismiss="alert"></i>
+                 
+                </div>
+
+                <button class="btn btn-warning float-right py-2 mt-2" type="submit">Register now</button>
+
+              </form>
+
+            </div>
+
+            <div id="login" class="tab-pane animated slideInLeft faster">
+              <form id="login-form">
+                <div class="input-group mb-4">
+                  <div class="input-group-prepend">
+                    <span class="input-group-text bg-primary text-light">Username</span>
+                  </div>
+
+                  <input type="email" name="username" id="username" class="form-control" placeholder="youremail@gmail.com">
+
+                </div>
+
+                 <div class="input-group mb-4">
+                  <div class="input-group-prepend">
+                    <span class="input-group-text bg-primary text-light">Password</span>
+                  </div>
+
+                  <input type="password" name="login-password" id="login-password" class="form-control" placeholder="123456789">
+
+                </div>
+                <div class="alert float-left w-75 d-none" id="login-message">
+                  <i class="fa fa-close close"></i>
+                  
+                </div>
+
+                <button class="btn btn-warning float-right py-2 mt-1">Login now</button>
+
+              </form>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+
+    </div>
+
+ </div>
+	
+
+
+ <!-- delete confirm modal-->
+
+ <div class="modal animated slideInDown" id="confirm">
+  <div class="modal-dialog">
+    <div class="alert alert-success delete-success-notice d-none">
+      <b>Delete success ! </b>Now you can register the new school
+    </div>
+    <div class="modal-content delete-message">
+
+      <div class="modal-header">
+        <h4 class="modal-title">Delete notice</h4>
+      </div>
+
+      <div class="modal-body">
+        Do you delete previous record ?
+
+      </div>
+      <div class="modal-footer">
+        <button class="btn btn-danger" id="delete-btn">Delete</button>
+        <button class="btn btn-primary" data-dismiss="modal">Cancel</button>
+      </div>
+
+    </div>
+  </div>
+
+ </div>
+
+</body>
+</html>
+

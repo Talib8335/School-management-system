@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>home</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+ <link rel="stylesheet" href="../css/bootstrap.css">
+  <link rel="stylesheet" href="../css/animate.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="style/admission_slip.css">
+  <script src="../js/jquery-1.9.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="../js/bootstrap.js"></script>
+  <script src="js/admission_slip.js"></script>
+</head>
+<body class="py-5">
+<script>
+if(sessionStorage.getItem("login") == null)
+{
+	window.location = "https://google.com";
+}
+
+</script>
+
+	<table width="720" border="1" align="center">
+		<tr>
+			<td width="150" height="150" id="pic">
+				
+			</td>
+			<td align="center">
+				<h2 class="school-name"></h2>
+				<span class="tag-line"></span>
+				<br>
+				<button class="btn border bg-white mt-3 cell"></button>
+			</td>
+		</tr>
+	</table>
+	<table border="1" width="720" align="center">
+		<tr>
+			<td height="40" class="pl-4 font-weight-bold" width="180">CANDIDATE NAME </td>
+			<td height="40" class="pl-4 s-name"></td>
+			<td height="40" class="pl-4 font-weight-bold" width="80">DOB</td>
+			<td height="40" class="pl-4 dob"></td>
+		</tr>
+
+		<tr>
+			<td height="40" class="pl-4 font-weight-bold" width="100">GENDER</td>
+			<td height="40" class="pl-4 gender"></td>
+			<td height="40" class="pl-4 font-weight-bold">ADMISSION DATE</td>
+			<td height="40" class="pl-4 doa"></td>
+		</tr>
+
+		<tr>
+			<td height="40" class="pl-4 font-weight-bold" width="100">FATHER`S NAME</td>
+			<td height="40" class="pl-4 f-name"></td>
+			<td height="40" class="pl-4 font-weight-bold">ADMITED IN</td>
+			<td height="40" class="pl-4 admit-in"></td>
+		</tr>
+
+		<tr>
+			<td height="40" class="pl-4 font-weight-bold" width="100">MOTHER`S NAME</td>
+			<td height="40" class="pl-4 m-name" colspan="3"></td>
+			
+		</tr>
+
+		<tr>
+			<td height="40" class="pl-4 font-weight-bold" width="100">MOBILE NUMBER</td>
+			<td height="40" class="pl-4 mobile-one"></td>
+			<td height="40" class="pl-4 mobile-two" colspan="2"></td>
+		
+		</tr>
+
+		<tr>
+			<td height="40" class="pl-4 font-weight-bold" width="100">ADDRESS</td>
+			<td height="40" class="pl-4 m-name address" colspan="3"></td>
+			
+		</tr>
+		<tr>
+			<td class="font-weight-bold text-center venue" colspan="4" height="40">
+			
+			</td>
+		</tr>
+	</table>
+	<center><button class="btn btn-dark border shadow-lg mt-5">PRINT DOCUMENT</button></center>
+</body>
+</html>
