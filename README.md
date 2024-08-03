@@ -24,7 +24,7 @@ This is a basic School Management System designed to handle various administrati
 1. **Clone the Project**
 
     ```bash
-    git clone https://github.com/your-username/school-management-system.git
+    git clone https://github.com/Talib8335/School-management-system.git
     ```
 
 2. **Navigate to the Project Directory**
